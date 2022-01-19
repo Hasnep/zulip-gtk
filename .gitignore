@@ -1,0 +1,5 @@
+# Environment variable file
+.env
+
+# Python
+__pycache__
