@@ -1,6 +1,6 @@
 from datetime import datetime as DateTime
 
-from zulip_gtk.ui.header_bar import RefreshButton
+
 from zulip_gtk.ui.message import Message
 from zulip_gtk.zulip_client import messages
 from zulip_gtk.zulip_client.streams import SubscriptionResponse

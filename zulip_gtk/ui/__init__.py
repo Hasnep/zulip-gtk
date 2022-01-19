@@ -1,6 +1,6 @@
 from zulip_gtk.ui.window import Window
 from zulip_gtk.zulip_client import ZulipClient
-from zulip_gtk.ui.header_bar import RefreshButton
+from zulip_gtk.ui.header_bar import HeaderBar
 from zulip_gtk.ui.stream import Stream
 
 # Load Gtk
@@ -27,7 +27,7 @@ class ZulipGtk(Gtk.Application):
             "clicked", self.do_refresh_button_clicked
         )
 
-    def do_refresh_button_clicked(self, _refresh_button: RefreshButton):
+    def do_refresh_button_clicked(self, _refresh_button: HeaderBar.RefreshButton):
         subscriptions = self.zulip_client.get_subscriptions()
         main_stack = self.window.main_paned.main_stack
         for subscription in subscriptions.subscriptions:
