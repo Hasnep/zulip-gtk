@@ -1,5 +1,3 @@
-from datetime import datetime as DateTime
-
 from zulip_gtk.ui.message import Message
 
 # Load Gtk
@@ -8,7 +6,7 @@ import gi
 from zulip_gtk.zulip_client.messages import MessageResponse
 
 gi.require_version("Gtk", "4.0")
-from gi.repository import Gtk, GLib, Gio, GObject
+from gi.repository import Gtk
 
 
 class Stream(Gtk.ScrolledWindow):

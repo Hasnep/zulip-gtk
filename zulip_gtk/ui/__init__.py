@@ -7,7 +7,7 @@ from zulip_gtk.ui.stream import Stream
 import gi
 
 gi.require_version("Gtk", "4.0")
-from gi.repository import Gtk, GLib, Gio, Pango
+from gi.repository import Gtk, GLib
 
 
 class ZulipGtk(Gtk.Application):

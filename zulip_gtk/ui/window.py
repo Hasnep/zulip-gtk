@@ -1,10 +1,3 @@
-from datetime import datetime as DateTime
-
-
-from zulip_gtk.ui.message import Message
-from zulip_gtk.zulip_client import messages
-from zulip_gtk.zulip_client.streams import SubscriptionResponse
-from zulip_gtk.ui.stream import Stream
 from zulip_gtk.ui.header_bar import HeaderBar
 from zulip_gtk.ui.main_paned import MainPaned
 
@@ -13,7 +6,7 @@ from zulip_gtk.ui.main_paned import MainPaned
 import gi
 
 gi.require_version("Gtk", "4.0")
-from gi.repository import Gtk, GLib, Gio
+from gi.repository import Gtk
 
 
 class Window(Gtk.ApplicationWindow):

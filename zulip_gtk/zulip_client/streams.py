@@ -1,5 +1,5 @@
-from pydantic import BaseModel, Field
-from typing import List, Optional, Union
+from pydantic import BaseModel
+from typing import List, Optional
 
 
 class SubscriptionResponse(BaseModel):
