@@ -6,11 +6,9 @@ import sys
 
 
 def main():
-    zulip_email = os.environ.get("ZULIP_EMAIL")
-    zulip_key = os.environ.get("ZULIP_KEY")
-    zulip_url = os.environ.get("ZULIP_URL")
-    if None in [zulip_email, zulip_key, zulip_url]:
-        raise ValueError("Zulip API not configured correctly.")
+    zulip_email = os.environ.get("ZULIP_EMAIL") or ""
+    zulip_key = os.environ.get("ZULIP_KEY") or ""
+    zulip_url = os.environ.get("ZULIP_URL") or ""
     zulip_client = ZulipClient(zulip_email, zulip_key, zulip_url)
     # messages = zulip_client.get_messages("newest", 10, 0)
 
