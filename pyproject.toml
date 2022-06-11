@@ -5,18 +5,20 @@ description = "Zulip GTK"
 authors = ["Hannes <h@nnes.dev>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-PyGObject = "^3.42.0"
-zulip = "^0.8.1"
-pydantic = "^1.9.0"
+python = "^3.10"
+pydantic = "^1.9.1"
+PyGObject = "^3.42.1"
+zulip = "^0.8.2"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
-black = "^21.12b0"
-mypy = "^0.930"
+black = "^22.3.0"
 flake8 = "^4.0.1"
+isort = "^5.10.1"
 pydocstyle = "^6.1.1"
-# pygobject-stubs = { git = "https://github.com/pygobject/pygobject-stubs" }
+PyGObject-stubs = "^0.0.9"
+pytest = "^7.1.2"
+ssort = "^0.11.5"
+pyright = "^1.1.253"
 
 [tool.pyright]
 include = ["zulip_gtk"]
