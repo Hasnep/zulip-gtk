@@ -1,10 +1,9 @@
+import gi
+
 from zulip_gtk.ui.header_bar import HeaderBar
 from zulip_gtk.ui.main_paned import MainPaned
 
-
 # Load Gtk
-import gi
-
 gi.require_version("Gtk", "4.0")
 from gi.repository import Gtk
 

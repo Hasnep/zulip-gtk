@@ -1,13 +1,13 @@
-from zulip_gtk.ui.window import Window
-from zulip_gtk.zulip_client import ZulipClient
-from zulip_gtk.ui.header_bar import HeaderBar
-from zulip_gtk.ui.stream import Stream
-
-# Load Gtk
 import gi
 
+from zulip_gtk.ui.header_bar import HeaderBar
+from zulip_gtk.ui.stream import Stream
+from zulip_gtk.ui.window import Window
+from zulip_gtk.zulip_client import ZulipClient
+
+# Load Gtk
 gi.require_version("Gtk", "4.0")
-from gi.repository import Gtk, GLib
+from gi.repository import GLib, Gtk
 
 
 class ZulipGtk(Gtk.Application):

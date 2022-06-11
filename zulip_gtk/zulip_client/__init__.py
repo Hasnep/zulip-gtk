@@ -1,4 +1,5 @@
-from typing import List, Optional, Union, Dict
+from typing import Dict, List, Optional, Union
+
 import zulip
 
 from zulip_gtk.zulip_client.messages import GetMessagesResponse

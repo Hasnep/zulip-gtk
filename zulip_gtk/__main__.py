@@ -1,8 +1,8 @@
-from zulip_gtk.zulip_client import ZulipClient
-from zulip_gtk.ui import ZulipGtk
-
 import os
 import sys
+
+from zulip_gtk.ui import ZulipGtk
+from zulip_gtk.zulip_client import ZulipClient
 
 
 def main():
