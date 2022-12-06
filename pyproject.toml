@@ -25,6 +25,12 @@ include = ["zulip_gtk"]
 typeCheckingMode = "basic"
 reportMissingModuleSource = false
 
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+ignore = ["E203", "E501", "F401", "W503"]
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
