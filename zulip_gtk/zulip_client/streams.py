@@ -21,7 +21,6 @@ class SubscriptionResponse(BaseModel):
     is_muted: bool
     is_announcement_only: bool
     is_web_public: bool
-    role: int
     color: str
     stream_post_policy: int
     message_retention_days: Optional[int]
