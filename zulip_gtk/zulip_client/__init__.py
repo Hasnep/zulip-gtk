@@ -10,12 +10,7 @@ from zulip_gtk.zulip_client.streams import (
 
 
 class ZulipClient:
-    def __init__(
-        self,
-        email: str,
-        api_key: str,
-        site: str,
-    ):
+    def __init__(self, email: str, api_key: str, site: str):
         self.client = zulip.Client(email=email, api_key=api_key, site=site)
 
     def get_narrow(
